@@ -26,7 +26,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.3.6'
 
 # for easier testing
-gem 'factory_girl'
+gem 'factory_girl_rails'
 
 # user authentication
 gem 'devise'
