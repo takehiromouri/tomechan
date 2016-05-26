@@ -26,4 +26,9 @@ class User < ActiveRecord::Base
     page = @agent.get('https://www.airbnb.jp/inbox')
     return page.search("ul#threads")
   end
+
+  def reservations
+    page = @agent.get('https://www.airbnb.jp/my_reservations')
+    return page.search("tr")
+  end
 end
