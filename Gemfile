@@ -27,13 +27,10 @@ gem 'bootstrap-sass', '~> 3.3.6'
 
 # for easier testing
 gem 'factory_girl_rails'
-
 # user authentication
 gem 'devise'
-
 # active admin
 gem 'activeadmin', github: 'activeadmin'
-
 # better forms
 gem 'simple_form'
 
@@ -43,7 +40,6 @@ gem 'simple_form'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-
   # testing stack
   gem 'rspec-rails', '~> 3.4'
   gem 'capybara'

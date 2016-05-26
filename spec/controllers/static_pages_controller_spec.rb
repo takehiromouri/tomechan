@@ -11,7 +11,9 @@ RSpec.describe StaticPagesController, type: :controller do
 
     context "when user is logged in" do
       it "should redirect to dashboard" do
-        
+        sign_in FactoryGirl.create(:user)
+        get :home
+        expect(response).to redirect_to dashboard_path
       end
     end
   end
