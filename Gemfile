@@ -34,6 +34,8 @@ gem 'activeadmin', github: 'activeadmin'
 # better forms
 gem 'simple_form'
 
+gem 'mechanize'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
