@@ -26,6 +26,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # for easier testing
 gem 'factory_girl'
 
+# user authentication
+gem 'devise'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
