@@ -1,11 +1,10 @@
-<h1>Welcome</h1>
+<% @reservations.each do |reservation| %>
+  <%= reservation %>
+  <h3><%= /(\d{1,2}月\d{1,2}日)/.match(reservation) %></h3>
+<% end %>
 
 <% @messages.each do |message| %>
   <%= raw(message) %>
 <% end %>
 
-<% @reservations.each do |reservation| %>
-  <h3><%= /(\d{1,2}月\d{1,2}日)/.match(reservation) %></h3>
-
-<% end %>
 
