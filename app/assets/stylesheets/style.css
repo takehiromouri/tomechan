@@ -329,7 +329,11 @@ iframe {
 }
 
 .navbar-custom .navbar-brand {
+  font-family: 'Varela Round', sans-serif;
 	height: auto;
+  color: #FF5A5F !important;
+  font-size: 30px;
+  font-weight: 600;
 }
 
 .navbar-custom-dark.navbar-default .navbar-nav>li>a {
@@ -542,7 +546,7 @@ iframe {
 .feature-icon {
   height: 80px;
   width: 80px;
-  border: 2px solid #767D8E;
+  border: 2px solid #43CEA2;
   margin: 0px auto;
   border-radius: 50%;
   font-size: 42px;
@@ -550,7 +554,7 @@ iframe {
 }
 
 .features-box-fill .feature-icon{
-  background-color: #767D8E;
+  background-color: #43CEA2;
   color: #ffffff
 }
 
