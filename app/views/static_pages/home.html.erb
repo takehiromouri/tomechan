@@ -1,5 +1,411 @@
-<h1>Hello World!</h1>
+<section class="home-minimal home-carousel" id="home">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="4000">
+          <!-- Indicators -->
+          <ol class="carousel-indicators carousel-indicators-dark">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
 
-<%= link_to 'ログイン', new_user_session_path %>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner carousel-custom" role="listbox">
+            <div class="item active">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-7">
+                            <div class="home-wrapper text-center">
+                                <h1>完全クラウド型物件システム</h1>
+                                <p class="text-muted">
+                                    民泊・ホテル・旅館事業者向け！宿泊予約サイトへの自動登録・クラウドで物件の予約・メッセージ・売上管理を自動化・簡易化！ 
+                                </p>
 
-<%= link_to '登録', new_user_registration_path %>
+                                <a href="#presignup" class="btn btn-custom">まずは無料相談</a>
+                                <%= link_to '無料でβ版を試す', '#presignup', class: 'btn btn-custom' %>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-5 hide-xs">
+                          <!-- image here -->
+                          <%= image_tag 'placeit.png' %>
+                        </div>
+                    </div>
+                </div><!-- container -->
+            </div><!-- item active -->
+          </div><!-- carousel-inner -->
+    </div>
+
+    <div class="social_proof_container">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12" style="margin-bottom: 30px;">
+            <h2 class="text-center" style="font-weight: 600;">連携予約媒体</h2>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <%= image_tag 'airbnb_logo.png', class: 'affiliate_logos' %>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <%= image_tag 'home_away_logo.png', class: 'affiliate_logos' %>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <%= image_tag 'zizaike_logo.png', class: 'affiliate_logos' %>
+          </div>
+        </div>          
+      </div>
+    </div>
+</section>
+
+
+<section class="section" id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+              <h2 class="text-center" style="font-weight: 600;">サービス概要</h2>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 30px;">
+            <div class="col-sm-4">
+                <div class="features-box features-box-fill text-center">
+                    <div class="feature-icon">
+                        <i class="fa fa-connectdevelop" aria-hidden="true"></i>
+                    </div>
+                    <h3>自動登録</h3>
+
+                    <p class="text-muted">提携している提携している複数媒体にあなたの物件を自動登録！リスティングを開始する際の手間がかからない。</p>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="features-box features-box-fill text-center">
+                    <div class="feature-icon">
+                        <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                    </div>
+                    <h3>予約管理</h3>
+
+                    <p class="text-muted">複数媒体での予約・収益状況が一元化され、一目で確認できるチャート分析！当日のチェックイン数、チェックアウト数が表示され、毎日の作業が一目瞭然！</p>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="features-box features-box-fill text-center">
+                    <div class="feature-icon">
+                        <i class="fa fa-comments-o" aria-hidden="true"></i>
+                    </div>
+                    <h3>メッセージ管理</h3>
+
+                    <p class="text-muted">複数の媒体やアカウントに分散されたメッセージを物件ごとに一元管理が可能！</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- 
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+                <img src="images/ipad.png" class="img-responsive">
+            </div>
+        </div>
+    </div>
+</section> -->
+
+
+<!--  <section class="section bg-white" id="works">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h2 class="title">Featured Projects</h2>
+                <p class="title-alt">Looks beautiful & ultra-sharp on Retina Screen Displays. Retina Icons, Fonts & all <br/> others graphics are optimized.</p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4">
+              <div class="gal-detail thumb text-center">
+                  <img src="images/works/1.jpg" class="thumb-img" alt="work-thumbnail">
+                  <h4><a href="#">Creative Agency</a></h4>
+                  <p><b>Web Design</b></p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="gal-detail thumb text-center">
+                  <img src="images/works/2.jpg" class="thumb-img" alt="work-thumbnail">
+                  <h4><a href="#">Sale Cards</a></h4>
+                  <p><b>Web Design</b></p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="gal-detail thumb text-center">
+                  <img src="images/works/3.jpg" class="thumb-img" alt="work-thumbnail">
+                  <h4><a href="#">Play Optics</a></h4>
+                  <p><b>Web Design</b></p>
+              </div>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4">
+              <div class="gal-detail thumb text-center">
+                  <img src="images/works/4.jpg" class="thumb-img" alt="work-thumbnail">
+                  <h4><a href="#">Creative Agency</a></h4>
+                  <p><b>Web Design</b></p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="gal-detail thumb text-center">
+                  <img src="images/works/5.jpg" class="thumb-img" alt="work-thumbnail">
+                  <h4><a href="#">Sale Cards</a></h4>
+                  <p><b>Web Design</b></p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="gal-detail thumb text-center">
+                  <img src="images/works/6.jpg" class="thumb-img" alt="work-thumbnail">
+                  <h4><a href="#">Play Optics</a></h4>
+                  <p><b>Web Design</b></p>
+              </div>
+            </div>
+
+        </div>
+        
+    </div>
+</section>
+-->
+
+<section class="section" id="pricing">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h2 class="title">料金システム</h2>
+                <!-- <p class="title-alt"></p> -->
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div class="row">
+
+                    <!--Pricing Column-->
+                    <article class="pricing-column col-lg-6 col-md-6">
+                        <div class="inner-box">
+                            <div class="plan-header text-center">
+                                <h3 class="plan-title">ツール提供</h3>
+                                <h2 class="plan-price">無料（β版）</h2>
+                                <div class="plan-duration">β版を無料でお試しいただけます。ご希望の方は是非お問い合わせ下さい。</div>
+                            </div>
+                            <!-- <ul class="plan-stats list-unstyled">
+                                <li> <i class="pe-7s-server"></i>10 GB Storege</li>
+                                <li> <i class="pe-7s-graph"></i>500 GB Bandwidth</li>
+                                <li> <i class="pe-7s-mail-open"></i>Email Support</li>
+                                <li> <i class="pe-7s-tools"></i>24x7 Support</li>
+                            </ul> -->
+
+                            <div class="text-center">
+                                <a href="#" class="btn btn-sm btn-custom">問い合わせ</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!--Pricing Column-->
+                    <article class="pricing-column col-lg-6 col-md-6">
+                        <div class="inner-box">
+                            <div class="plan-header text-center">
+                                <h3 class="plan-title">プロジェクトマネジメント</h3>
+                                <h2 class="plan-price">応相談</h2>
+                                <div class="plan-duration">物件に合わせて新規開発の企画支援からリノベーション・インテリアコーディネート・物件の完全運用代行まで行っております。</div>
+                            </div>
+                            <!-- <ul class="plan-stats list-unstyled">
+                                <li> <i class="pe-7s-server"></i>10 GB Storege</li>
+                                <li> <i class="pe-7s-graph"></i>500 GB Bandwidth</li>
+                                <li> <i class="pe-7s-mail-open"></i>Email Support</li>
+                                <li> <i class="pe-7s-tools"></i>24x7 Support</li>
+                            </ul>
+-->
+                            <div class="text-center">
+                                <a href="#" class="btn btn-sm btn-custom">問い合わせ</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!--Pricing Column-->
+                    <!-- <article class="pricing-column col-lg-4 col-md-4">
+                        <div class="inner-box">
+                            <div class="plan-header text-center">
+                                <h3 class="plan-title">Developer</h3>
+                                <h2 class="plan-price">$39</h2>
+                                <div class="plan-duration">Per Month</div>
+                            </div>
+                            <ul class="plan-stats list-unstyled">
+                                <li> <i class="pe-7s-server"></i>10 GB Storege</li>
+                                <li> <i class="pe-7s-graph"></i>500 GB Bandwidth</li>
+                                <li> <i class="pe-7s-mail-open"></i>Email Support</li>
+                                <li> <i class="pe-7s-tools"></i>24x7 Support</li>
+                            </ul>
+
+                            <div class="text-center">
+                                <a href="#" class="btn btn-sm btn-dark">Signup Now</a>
+                            </div>
+                        </div>
+                    </article> -->
+
+                    <%= link_to 'まずは無料相談', '#', class: 'btn btn-custom btn-lg', style: 'margin: 0 auto; display: table;' %>
+                </div>
+            </div><!-- end col -->
+        </div>
+    </div>
+</section>
+
+
+
+<!-- 
+<section class="section bg-white padding-b-0" id="clients">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-sm-12">
+                <h2 class="title">お客様の声</h2>
+                <p class="slogan"></p>
+                <ul class="list-inline client-list">
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+-->
+
+
+<!-- <section class="section bg-white" id="team">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h2 class="title">Our People</h2>
+                <p class="title-alt">Looks beautiful & ultra-sharp on Retina Screen Displays. Retina Icons, Fonts & all <br/> others graphics are optimized.</p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="team-box text-center">
+                    <img src="images/team/team-1.jpg" class="img-responsive center-block img-circle">
+
+                    <h4>Shawn Castleman </h4>
+                    <p>Founder</p>
+                    <ul class="list-inline footer-social-one team-member-social m-b-0">
+                        <li><a href="#"><i class="pe-so-facebook"></i></a></li>
+                        <li><a href="#"><i class="pe-so-twitter"></i></a></li>
+                        <li><a href="#"><i class="pe-so-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="team-box text-center">
+                    <img src="images/team/team-2.jpg" class="img-responsive center-block img-circle">
+
+                    <h4>Martha Davis</h4>
+                    <p>Web Designer</p>
+                    <ul class="list-inline footer-social-one team-member-social m-b-0">
+                        <li><a href="#"><i class="pe-so-facebook"></i></a></li>
+                        <li><a href="#"><i class="pe-so-twitter"></i></a></li>
+                        <li><a href="#"><i class="pe-so-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="team-box text-center">
+                    <img src="images/team/team-3.jpg" class="img-responsive center-block img-circle">
+
+                    <h4>Henry Hope</h4>
+                    <p>Manager</p>
+                    <ul class="list-inline footer-social-one team-member-social m-b-0">
+                        <li><a href="#"><i class="pe-so-facebook"></i></a></li>
+                        <li><a href="#"><i class="pe-so-twitter"></i></a></li>
+                        <li><a href="#"><i class="pe-so-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section> -->
+
+
+
+<section class="section" id="faqs">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-sm-12">
+                <h2 class="title">FAQ</h2>
+                <p class="title-alt">よくあるご質問</p>
+                
+                <div class="row text-left">
+                    <div class="col-sm-6">
+                        <div class="question-box">
+                            <h4><span class="text-colored">Q.</span>サービス利用申し込み問い合わせ、事前に準備することはありますか？</h4>
+                            <p><span><b>A. </b></span></p>
+                            <ol>
+                              <li>家具・家電・備品のご準備</li>
+                              <p>基本的にはすべてお客様でご準備いただきます。＊ただし、プロジェクトマネジメントプランをご希望の方は</p>
+                              <li>All in BnBアカウント登録</li>
+                              <p>
+                                弊社担当より「アカウント設定方法」資料及び、All in BnBアカウント登録URLをお送りさせていただきます。設定手順にしたがて登録を行ってください。また、ご希望の方はお電話でのご案内もご利用いただけます。
+                              </p>
+                              <li>Airbnbなど宿泊予約サイトのアカウント登録</li>
+                              <p>
+                                弊社担当より「アカウント設定方法」資料をお送りさせていただきます。設定手順に従って登録を行ってください。登録の際は、必ずID認証（①パスポート、②Facebook or LinkedIn or Google）をお済ませください。
+                              </p>
+                            </ol>
+                        </div>              
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="question-box">
+                            <h4><span class="text-colored">Q.</span>約款や契約書はありますか？</h4>
+                            <p><span><b>A. </b></span>約款や契約書は特にございません。All in BnBアカウント登録の際に、利用規約及びプライバシーポリシーがございあすので、そちらをご確認ください。</p>
+                        </div>
+
+                        <div class="question-box">
+                            <h4><span class="text-colored">Q.</span>もし同じアカウントで複数物件を管理していたらどうすればいいのですか？</h4>
+                            <p><span><b>A. </b></span>運用は、アカウント単位ではなくリスティング（物件）で行っています。複数の運用物件をお持ちで、そのうちの一部でAll in BnBサービスを受けられる場合には、サービス内で連携する物件を選択していただく必要がございます。</p>
+                        </div>
+
+                        <div class="question-box">
+                            <h4><span class="text-colored">Q.</span>Airbnbなどホームシェア（民泊）サイトのアカウントログイン情報を共有する必要はありますか？</h4>
+                            <p><span><b>A. </b></span>はい。お客様とAll in BnB双方で、お客様のアカウント情報を共有し運用する形になります。Airbnbなど宿泊予約サイトのアカウント管理にて、弊社で発行したメールアドレスを設定ください。また登録したパスワードを共有ください。</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div> <!-- end Col -->
+        </div>
+
+    </div>
+</section>
+
+<section class="section" id="presignup">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-sm-12">
+                <h2 class="title">事前登録</h2>
+                <p class="title-alt">ALL IN BNBのサービスの最新情報をすぐにお知らせいたします。</p>
+                
+                <%= render 'static_pages/presignup' %>
+            </div> <!-- end Col -->
+        </div>
+
+    </div>
+</section>

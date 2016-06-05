@@ -28,7 +28,6 @@ class User < ActiveRecord::Base
 
   def reservations
     page = @agent.get('https://www.airbnb.jp/my_reservations')
-    binding.pry
     return page.search("tr")
     # details = reservations.at('td:contains("月")').text.strip
     # -> "2016年04月16日 - 2016年07月10日\n    \n    UENO ASAKUSA modern stylish house\n    \n        3 Chome-1-14 Higashinippori\n        \n        Arakawa-ku, Tōkyō-to 116-0014"
