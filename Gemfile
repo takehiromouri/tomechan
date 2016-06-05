@@ -36,6 +36,8 @@ gem 'simple_form'
 
 gem 'mechanize'
 
+gem 'rails_12factor', group: :production
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
