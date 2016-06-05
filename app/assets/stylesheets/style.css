@@ -328,11 +328,11 @@ iframe {
           transition: background-color 1s ease-in-out, border 1s ease-in-out;
 }
 
-.navbar-custom .navbar-brand {
-  font-family: 'Varela Round', sans-serif;
+.navbar-brand {
+  font-family: 'Josefin Sans', sans-serif;
 	height: auto;
   color: #FF5A5F !important;
-  font-size: 30px;
+  font-size: 30px !important;
   font-weight: 600;
 }
 
