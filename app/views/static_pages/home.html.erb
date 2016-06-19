@@ -1,39 +1,20 @@
-<section class="home-minimal home-carousel" id="home">
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="4000">
-          <!-- Indicators -->
-          <ol class="carousel-indicators carousel-indicators-dark">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-          </ol>
 
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner carousel-custom" role="listbox">
-            <div class="item active">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12 col-md-7">
-                            <div class="home-wrapper text-center">
-                                <h1>完全クラウド型物件システム</h1>
-                                <p class="text-muted">
-                                    民泊・ホテル・旅館事業者向け！宿泊予約サイトへの自動登録・クラウドで物件の予約・メッセージ・売上管理を自動化・簡易化！ 
-                                </p>
 
-                                <a href="#presignup" class="btn btn-custom">まずは無料相談</a>
-                                <%= link_to '事前登録する', '#presignup', class: 'btn btn-custom' %>
+        <div id="lp_bg">
+            <div class="col-md-3 col-md-offset-1 col-xs-12">
+                <div class="text-center" style="padding-top: 150px;">
+                <h1>完全クラウド型物件システム</h1>
+                <p class="text-muted">
+                    民泊・ホテル・旅館事業者向け！宿泊予約サイトへの自動登録・クラウドで物件の予約・メッセージ・売上管理を自動化・簡易化！ 
+                </p>
 
-                            </div>
-                        </div>
+                <a href="#presignup" class="btn btn-custom">まずは無料相談</a>
+                <%= link_to '事前登録する', '#presignup', class: 'btn btn-custom' %>
 
-                        <div class="col-md-5 hide-xs">
-                          <!-- image here -->
-                          <%= image_tag 'placeit.png' %>
-                        </div>
-                    </div>
-                </div><!-- container -->
-            </div><!-- item active -->
-          </div><!-- carousel-inner -->
-    </div>
+                </div>
+            </div>
+        </div>
+
 
     <!-- <div class="social_proof_container">
       <div class="container">
@@ -61,28 +42,27 @@
         </div>          
       </div>
     </div> -->
-</section>
 
-<hr>
-
-<section class="section" id="services">
-    <div class="container">
+<section class="section" id="services" style="padding-bottom: 50px;">
+    <div class="container-fluid">
     
-        <div class="row">
+        <div class="row" style="border-bottom: 1px solid whitesmoke;">
             <div class="col-xs-12">
-                <h3>
-                    All in BnBでは、不動産会社、個人オーナー様向けに、民泊仲介サイトでの物件管理を一元化するサービスを提供しています。ツールを利用することで、複数の民泊仲介サイトへ物件を自動掲載したり管理業務を一つにまとめられるため、業務効率化・物件パフォーマンスの最大化へとご活用いただきたいと考えています。
-                </h3>
+                <h1 class="text-center">All in Bnbの魅力</h1>
+                <p class="text-center">
+                    All in BnBでは、不動産会社、個人オーナー様向けに、民泊仲介サイトでの物件管理を一元化するサービスを提供しています。<br>
+                    ツールを利用することで、複数の民泊仲介サイトへ物件を自動掲載したり管理業務を一つにまとめられるため、<br>業務効率化・物件パフォーマンスの最大化へとご活用いただきたいと考えています。
+                </p>
             </div>
             <div class="col-xs-12">
                 <%= image_tag 'lp_1.png', class: 'img-responsive', style: 'margin: 0 auto;' %>
             </div>
         </div>
 
-        <div class="description">
+        <div class="description" style="margin-top: 50px;">
             <div class="row">
                 <div class="col-xs-12 col-md-5 col-md-offset-1 col-md-push-6">
-                    <h2>自動登録</h2>
+                    <h1>自動登録</h1>
                     <p>
                         ツールと連携している民泊仲介サイトにあなたの物件を自動登録！<br>
                         新しくリスティングを開始する際の手間がかかりません。
@@ -96,14 +76,14 @@
 
         <div class="description">
             <div class="row">
-                <div class="col-xs-12 col-md-5">
-                    <h2>予約管理</h2>
+                <div class="col-xs-12 col-md-4 col-md-offset-1">
+                    <h1>予約管理</h1>
                     <p>
                         連携している民泊仲介サイトから自動で物件情報を取得することで、リアルタイムで予約・収益状況を一元管理！<br>
                         カレンダーのブロックや価格調節などの運用業務を自動化！
                     </p>
                 </div>
-                <div class="col-xs-12 col-md-5 col-md-offset-1">
+                <div class="col-xs-12 col-md-6 col-md-offset-1">
                     <%= image_tag 'lp_3.png', class: 'img-responsive' %>
                 </div>
             </div>
@@ -112,7 +92,7 @@
         <div class="description">
             <div class="row">
                 <div class="col-xs-12 col-md-5 col-md-offset-1 col-md-push-5">
-                    <h2>メッセージ管理</h2>
+                    <h1>メッセージ管理</h1>
                     <p>
                         複数の民泊仲介サイトや複数アカウントに分散しているメッセージを一元管理！<br>
                         レビューの低下に大きく響く「返信忘れ」を防ぐことができます。
@@ -254,7 +234,7 @@
 </section>
 -->
 
-<section class="section" id="pricing">
+<section class="section" id="pricing" style="background: #f7f7f7;">
     <div class="container">
 
         <div class="row">
@@ -416,7 +396,7 @@
 
 
 
-<section class="section" id="faqs">
+<section class="section" id="faqs" style="border-bottom: 1px solid whitesmoke;">
     <div class="container">
         <div class="row text-center">
             <div class="col-sm-12">
@@ -471,7 +451,7 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-sm-12">
-                <h2 class="title">事前登録</h2>
+                <h1 class="title">事前登録</h1>
                 <p class="title-alt">All in BnB のサービスの最新情報をすぐにお知らせいたします。</p>
                 
                 <%= render 'static_pages/presignup' %>

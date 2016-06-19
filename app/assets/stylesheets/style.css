@@ -10,7 +10,9 @@
 body {
 	background-color: #f9f9f9;
 	color: #505458;
-	font-family: 'Roboto', sans-serif;
+	/*font-family: 'Roboto', sans-serif;*/
+  font-family: Kozuka Gothic Pro,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,メイリオ,Meiryo,ＭＳ\ Ｐゴシック,游ゴシック体,Yu Gothic,YuGothic,sans-serif !important;
+  font-size: 16px !important;
 }
 
 .logo {
@@ -616,7 +618,8 @@ iframe {
   margin: 20px auto 0px auto;
   max-width: 320px;
   padding: 0px 30px 50px;
-  border: 2px solid #767D8E;
+  /*border: 2px solid #767D8E;*/
+  background: white;
 }
 
 .inner-box p {
@@ -657,7 +660,7 @@ iframe {
 }
 
 .pricing-column .plan-duration {
-  font-size: 13px;
+  font-size: 15px;
   color: #98a6ad;
 }
 
