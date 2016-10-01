@@ -18,22 +18,10 @@ class User < ActiveRecord::Base
     form.email = airbnb_email
     form.password = airbnb_password
     page = form.submit
-
   end
 
   def messages
     page = @agent.get('https://www.airbnb.jp/inbox')
     return page.search("ul#threads")
-  end
-
-  def reservations
-    page = @agent.get('https://www.airbnb.jp/my_reservations')
-    return page.search("tr")
-    # details = reservations.at('td:contains("月")').text.strip
-    # -> "2016年04月16日 - 2016年07月10日\n    \n    UENO ASAKUSA modern stylish house\n    \n        3 Chome-1-14 Higashinippori\n        \n        Arakawa-ku, Tōkyō-to 116-0014"
-    # date => details.at('td:contains("月")').text.strip.split("\n")[0]
-    # name => r.at('td:contains("月")').text.strip.split("\n")[2]
-    # address 1 => r.at('td:contains("月")').text.strip.split("\n")[4]
-    # address 2 => r.at('td:contains("月")').text.strip.split("\n")[6]
   end
 end
